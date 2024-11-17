@@ -12,7 +12,18 @@ const readAllStudents = () => {
 
         const dataStudents = JSON.parse(data)
 
-        console.log("los estudiantes son :" , dataStudents);
+        const userIteration = dataStudents.students
+        console.log("los estudiantes son :");
+        userIteration.forEach(element => {
+
+            
+            console.log(`El estudiante es : ${element.nombre} , ${element.apellido} y su carrera es : ${element.carrera}`);
+            
+            
+            
+        });
+
+        
         
         
     })
